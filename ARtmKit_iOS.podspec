@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "ARtmKit_iOS"
-  spec.version      = "1.0.1.2"
+  spec.version      = "1.0.1.3"
   spec.summary      = "ArRTM-iOS"
 
   # This description is used to generate tags and improve search results.
