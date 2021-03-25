@@ -773,7 +773,7 @@ SDK 设有 2 个日志文件，每个文件大小为 512 KB。如果你将 fileS
 
 /** 查询 SDK 版本号
 
-@return 当前的RTM SDK 版本号，格式为字符串，如 4.0.0
+@return 当前的RTM SDK 版本号，格式为字符串，如 1.0.0
 */
 + (NSString *_Nonnull)getSDKVersion;
 
