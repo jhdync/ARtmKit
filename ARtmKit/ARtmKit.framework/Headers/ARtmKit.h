@@ -739,10 +739,10 @@ getUserAllAttributes 和 getUserAttributesByKeys 一并计算在内：调用频�
 **Note**
 
  - 日志文件的默认地址如下:
-   - iOS: `App Sandbox/Library/caches/sdk.log`
+   - iOS: `App Sandbox/Library/caches/ar_rtm_sdk.log`
    - macOS
-     - 开启沙盒: `App Sandbox/Library/Logs/sdk.log`, 例如 `/Users/<username>/Library/Containers/<App Bundle Identifier>/Data/Library/Logs/sdk.log`.
-     - 关闭沙盒: `～/Library/Logs/sdk.log`.
+     - 开启沙盒: `App Sandbox/Library/Logs/ar_rtm_sdk.log`, 例如 `/Users/<username>/Library/Containers/<App Bundle Identifier>/Data/Library/Logs/ar_rtm_sdk.log`.
+     - 关闭沙盒: `～/Library/Logs/ar_rtm_sdk.log`.
  - 如需调用本方法，请在调用 initWithAppId 方法初始化 ARtmKit 对象后立即调用，否则可能造成输出日志不完整。
 
  @param logFile 日志文件的完整路径。该日志文件为 UTF-8 编码。

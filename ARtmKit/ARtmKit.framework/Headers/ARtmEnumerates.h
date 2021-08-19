@@ -96,7 +96,7 @@ typedef NS_ENUM(NSInteger, ARtmLogoutErrorCode) {
     ARtmLogoutErrorNotInitialized = 101,
     
     /**
-    102: 登出 A RTM 系统前未调用 loginByToken 方法或者 loginByToken 方法调用未成功。
+    102: 登出 RTM 系统前未调用 loginByToken 方法或者 loginByToken 方法调用未成功。
     */
     ARtmLogoutErrorNotLoggedIn = 102,
 };
@@ -626,7 +626,7 @@ typedef NS_ENUM(NSInteger, ARtmPeerSubscriptionStatusErrorCode) {
     ARtmPeerSubscriptionStatusErrorRejected = 3,
     
     /**
-     4: The SDK fails to receive a response from the server in 10 seconds. The current timeout is set as 10 seconds. Possible reasons: The user is in the \ref A::rtm::CONNECTION_STATE_ABORTED "CONNECTION_STATE_ABORTED" or \ref A::rtm::CONNECTION_STATE_RECONNECTING "CONNECTION_STATE_RECONNECTING" state.
+     4: SDK在10秒内没有收到服务器的响应
      */
     ARtmPeerSubscriptionStatusErrorTimeout = 4,
     
