@@ -60,7 +60,7 @@ typedef NS_ENUM(NSInteger, ARtmLoginErrorCode) {
     ARtmLoginErrorAlreadyLogin = 8,
     
     /**
-     9: 登录超时。目前的超时设置为 6 秒。
+     9: 登录超时。目前的超时设置为 12 秒。
      */
     ARtmLoginErrorTimeout = 9,
     
@@ -909,7 +909,7 @@ typedef NS_ENUM(NSInteger, ARtmConnectionChangeReason) {
     ARtmConnectionChangeReasonLoginFailure = 3,
     
     /**
-     4: SDK 未在 6 秒内登录 ar云平台 RTM 系统，登录超时。可能原因：用户正处于 ARtmConnectionStateAborted 状态或 ARtmConnectionStateReconnecting 状态。
+     4: SDK 未在 12 秒内登录 ar云平台 RTM 系统，登录超时。可能原因：用户正处于 ARtmConnectionStateAborted 状态或 ARtmConnectionStateReconnecting 状态。
      */
     ARtmConnectionChangeReasonLoginTimeout = 4,
     

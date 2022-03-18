@@ -204,6 +204,8 @@ typedef void (^ARtmRemoteInvitationRefuseBlock)(ARtmInvitationApiCallErrorCode e
  */
 __attribute__((visibility("default"))) @interface ARtmChannel: NSObject
 
+- (instancetype _Nonnull)init NS_UNAVAILABLE;
+
 /**
  ARtmKit 实例。
  */
@@ -270,6 +272,8 @@ __attribute__((visibility("default"))) @interface ARtmChannel: NSObject
 @end
 
 @interface ARtmCallKit : NSObject
+
+- (instancetype _Nonnull)init NS_UNAVAILABLE;
 
 /**
  ARtmKit 对象。
@@ -338,6 +342,8 @@ __attribute__((visibility("default"))) @interface ARtmChannel: NSObject
 
 @interface ARtmKit : NSObject
 
+- (instancetype _Nonnull)init NS_UNAVAILABLE;
+
 /**
  ARtmDelegate 接口类向 App 发送回调通知，上报运行时的事件。
  */
@@ -361,6 +367,14 @@ __attribute__((visibility("default"))) @interface ARtmChannel: NSObject
  */
 - (instancetype _Nullable)initWithAppId:(NSString * _Nonnull)appId
                               delegate:(id <ARtmDelegate> _Nullable)delegate;
+
+/**
+ 释放当前 ARtmKit 实例使用的所有资源。
+ 
+ **NOTE**
+ 请不要在任何回调中调用该方法。
+ */
+- (void)destroy;
 
 /**
  登录 ar云平台 RTM 系统。

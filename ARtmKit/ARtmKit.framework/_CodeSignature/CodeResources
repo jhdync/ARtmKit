@@ -10,11 +10,11 @@
 		</data>
 		<key>Headers/ARtmEnumerates.h</key>
 		<data>
-		8liwNDun8nVvp1Gez51ar1WA8mM=
+		TomM1fZHCZNoBYspdJu31svnveE=
 		</data>
 		<key>Headers/ARtmKit.h</key>
 		<data>
-		gpbqmoaXYR/KVJSnLHGisaZ3UOs=
+		bTs+mGiQp4aCwoVH0gm3+qsOzKM=
 		</data>
 		<key>Headers/ARtmObjects.h</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		4jPs9Q7l7jM/lrldr4BMbiiDNIQ=
+		/DdSqWenoxND875mFjt7kpeedPM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -46,22 +46,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8liwNDun8nVvp1Gez51ar1WA8mM=
+			TomM1fZHCZNoBYspdJu31svnveE=
 			</data>
 			<key>hash2</key>
 			<data>
-			qGcUWznc/sYomX2C5Q93gL2jrzvc/bfKeVYWx9oloRQ=
+			4MkQFYBHXfGw1o/eYqk4DmxzUm0KLVdGnXa9z9iA8tg=
 			</data>
 		</dict>
 		<key>Headers/ARtmKit.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			gpbqmoaXYR/KVJSnLHGisaZ3UOs=
+			bTs+mGiQp4aCwoVH0gm3+qsOzKM=
 			</data>
 			<key>hash2</key>
 			<data>
-			qbPPQdRaNsdsPQcj+Pu+z/HHhD/7pZqBhhm6jRXCpGk=
+			NSLwj0N7kif+Mt7Ex7R9HxpEROdbt45F9i3NQeWldhw=
 			</data>
 		</dict>
 		<key>Headers/ARtmObjects.h</key>
