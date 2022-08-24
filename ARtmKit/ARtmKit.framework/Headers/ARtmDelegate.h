@@ -90,12 +90,20 @@ ARtmDelegate 接口类向 App 发送回调通知，上报运行时的事件。
 /**
  （SDK 断线重连时触发）当前使用的 RTM Token 已超过 24 小时的签发有效期。
  
- * 该回调仅会在 SDK 处于 ARtmConnectionStateReconnecting 状态时因 RTM 后台监测到 Token 签发有效期过期而触发。SDK 处于 ARtmConnectionStateConnected 状态时该回调不会被触发。
- * 收到该回调时，请尽快在你的业务服务端生成新的 Token 并调用 renewToken 方法把新的 Token 传给 Token 验证服务器。
-
+ * 收到该回调时，请尽快在你的业务服务端生成新的 Token,然后调用loginByToken重新登录。
  @param kit 一个 ARtmKit 实例。
  */
 - (void)rtmKitTokenDidExpire:(ARtmKit * _Nonnull)kit;
+
+/**
+ 当前使用的 RTM Token 还有 30 秒过期。
+ 
+ * SDK 触发该回调提醒 App 当前 Token 即将过期，应即时获取新 Token。收到该回调后，你需要在服务端生成新 Token 并调用 renewToken 方法将该 Token 传给 SDK。
+ * 如果调用 loginByToken 方法登录时传入的 Token 直至过期仍未更新，SDK 会断线重连，用户将下线。
+
+ @param kit 一个 ARtmKit 实例。
+ */
+- (void)rtmKitTokenPrivilegeWillExpire:(ARtmKit *_Nonnull)kit;
 
 @end
 
